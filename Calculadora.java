@@ -67,22 +67,26 @@ public class Calculadora{
 
     return a / b / c;
    }
-}
-    public static void main(String[] args){
-        //Instanciar objeto
-        Calculadora calculadora = new Calculadora();
-        Scanner scanner = new Scanner(System.in);
+   //CLASE MAIN
+   public static void main(String[] args){
+    //Instanciar objeto
+    Calculadora calculadora = new Calculadora();
+    Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese el valor de a");
-        int scannerInt= scanner.nextInt();
-        System.out.println("Ingrese el valor de b");
-        int scannerInt2 = scanner.nextInt();
-        System.out.println("Ingrese el valor de c");
-        int scannerInt3 = scanner.nextInt();
-
-        double scannerdouble1= scanner.nextdoubl();
-        System.out.println("Ingrese el valor de b");
-        double scannerDouble2 = scanner.nextDouble();
-        System.out.println("Ingrese el valor de c");
-        double scannerDouble3 = scanner.nextDouble();
+    System.out.println("Ingrese 3 numeros enteros:");
+    int numInt1= scanner.nextInt();
+    int numInt2= scanner.nextInt();
+    int numInt3= scanner.nextInt();
+    System.out.println("Ahora 3 numero decimales:");
+    double numDouble1= scanner.nextDouble();
+    double numDouble2= scanner.nextDouble();
+    double numDouble3= scanner.nextDouble();
+    System.out.println("-------------------------");
+    System.out.println("== SUMAR == ");
+    System.out.println("La suma de " + numInt1 + " y " + numInt2 + " = " + calculadora.Sumar(numInt1, numInt2) );
+    System.out.println("La suma de " + numInt1 + ", de " + numInt2 + " y de " + numInt3 + " = " + calculadora.Sumar(numInt1, numInt2, numInt3) );
+    System.out.println("La suma de " + numDouble1 + " y " + numDouble2 + " = " + calculadora.Sumar(numDouble1, numDouble2) );
+    System.out.println("La suma de " + numDouble1 + ", de " + numDouble2 + " y de " + numDouble3 + " = " + calculadora.Sumar(numDouble1, numDouble2, numDouble3) );
     }
+
+}
